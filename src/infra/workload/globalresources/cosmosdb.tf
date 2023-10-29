@@ -128,7 +128,7 @@ resource "azurerm_monitor_diagnostic_setting" "cosmosdb" {
       category = entry.value
 
       retention_policy {
-        enabled = true
+        enabled = false
         days    = 30
       }
     }
@@ -143,7 +143,7 @@ resource "azurerm_monitor_diagnostic_setting" "cosmosdb" {
       enabled  = true
 
       retention_policy {
-        enabled = true
+        enabled = false
         days    = 30
       }
     }
